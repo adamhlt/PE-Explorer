@@ -11,4 +11,4 @@ Vous pouvez tester l'exploreur avec les fichiers fournis dans le dossier "Releas
     explorer.exe test.exe
 La commande ci-dessus vous permet de tester l'exploreur avec les fichiers fournis.
 ### Démonstration
-![Démontration de l'injecteur de DLL.](https://github.com/LOURRS/PE-Explorer/blob/master/Ressource/demo.gif)
+![Démontration de l'injecteur de DLL.](https://github.com/adamhlt/PE-Explorer/blob/main/Ressource/demo.gif)
