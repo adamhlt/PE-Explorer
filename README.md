@@ -3,7 +3,6 @@
 Ceci est un exploreur de fichier PE écrit en C++ . Ce projet permet de se familiariser avec la structure des fichiers PE, l'exploreur est compatible avec les deux architectures (x86 / x64).
 
 Les commentaires dans les sources n'expliquent pas en détail la structure des fichiers PE. 
-[//]: # Pour plus d'information sur la structure des fichier PE je vous invite à vous rendre [ici (adamhlt.).](https://studentlog.net) 
 
 ### Utilisation
 Cet exploreur s'utilise en ligne de commande de façon très simple.
