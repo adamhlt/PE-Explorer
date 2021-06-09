@@ -7,7 +7,7 @@ Les commentaires dans les sources n'expliquent pas en détail la structure des f
 ### Utilisation
 Cet exploreur s'utilise en ligne de commande de façon très simple.
     explorer.exe <PE File>
-Vous pouvez tester l'exploreur avec les fichiers fournis dans le dossier "Release", les deux architectures (x86 et x64) sont présentes pour les fichiers de test.
+Vous pouvez tester l'exploreur avec les fichiers fournis dans la section "Release", les deux architectures (x86 et x64) sont présentes pour les fichiers de test.
     explorer.exe test.exe
 La commande ci-dessus vous permet de tester l'exploreur avec les fichiers fournis.
 ### Démonstration
