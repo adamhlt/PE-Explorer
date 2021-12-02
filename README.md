@@ -2,18 +2,24 @@
 
 # PE Explorer 
 
-[![C++](https://img.shields.io/badge/language-C%2B%2B-%23f34b7d.svg?style=for-the-badge&logo=appveyor)](https://en.wikipedia.org/wiki/C%2B%2B) [![Windows](https://img.shields.io/badge/platform-Windows-0078d7.svg?style=for-the-badge&logo=appveyor)](https://en.wikipedia.org/wiki/Microsoft_Windows) [![x86](https://img.shields.io/badge/arch-x86-red.svg?style=for-the-badge&logo=appveyor)](https://en.wikipedia.org/wiki/X86) [![x64](https://img.shields.io/badge/arch-x64-green.svg?style=for-the-badge&logo=appveyor)](https://en.wikipedia.org/wiki/X64)
+[![C++](https://img.shields.io/badge/language-C%2B%2B-%23f34b7d.svg?style=for-the-badge&logo=appveyor)](https://en.wikipedia.org/wiki/C%2B%2B) [![Windows](https://img.shields.io/badge/platform-Windows-0078d7.svg?style=for-the-badge&logo=appveyor)](https://en.wikipedia.org/wiki/Microsoft_Windows) [![x86](https://img.shields.io/badge/arch-x86-red.svg?style=for-the-badge&logo=appveyor)](https://en.wikipedia.org/wiki/X86)
 
-### Présentation 
-Ceci est un exploreur de fichier PE écrit en C++ . Ce projet permet de se familiariser avec la structure des fichiers PE, l'exploreur est compatible avec les deux architectures (x86 / x64).
+## 📖 Project Overview :
 
-Les commentaires dans les sources n'expliquent pas en détail la structure des fichiers PE. 
+This is a PE file parser, it retrieve every informations from the differents headers...
 
-### Utilisation
-Cet exploreur s'utilise en ligne de commande de façon très simple.
-    explorer.exe <PE File>
-Vous pouvez tester l'exploreur avec les fichiers fournis dans la section "Release", les deux architectures (x86 et x64) sont présentes pour les fichiers de test.
-    explorer.exe test.exe
-La commande ci-dessus vous permet de tester l'exploreur avec les fichiers fournis.
+This tool is made in C++ and compiled in x86, it can parse x86 and x64 PE file.
+
+## 🚀 Getting Started :
+
+### Visual Studio :
+
+1. Open the solution file (.sln).
+2. Build the project in Realese (x86)
+
+Every configuration in x86 (Debug and Realese) are already configured.
+
+**It is not necessary to build it in x64, the x86 build can parse x86 and x64 PE file.**
+
 ### Démonstration
 ![Démontration de l'injecteur de DLL.](https://github.com/adamhlt/PE-Explorer/blob/main/Ressource/demo.gif)
