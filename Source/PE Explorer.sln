@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PE Explorer", "PE Explorer\PE Explorer.vcxproj", "{98EE755C-A881-41FA-B9FE-20D8D9B6641C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98EE755C-A881-41FA-B9FE-20D8D9B6641C}.Debug|x64.ActiveCfg = Debug|x64
+		{98EE755C-A881-41FA-B9FE-20D8D9B6641C}.Debug|x64.Build.0 = Debug|x64
+		{98EE755C-A881-41FA-B9FE-20D8D9B6641C}.Debug|x86.ActiveCfg = Debug|Win32
+		{98EE755C-A881-41FA-B9FE-20D8D9B6641C}.Debug|x86.Build.0 = Debug|Win32
+		{98EE755C-A881-41FA-B9FE-20D8D9B6641C}.Release|x64.ActiveCfg = Release|x64
+		{98EE755C-A881-41FA-B9FE-20D8D9B6641C}.Release|x64.Build.0 = Release|x64
+		{98EE755C-A881-41FA-B9FE-20D8D9B6641C}.Release|x86.ActiveCfg = Release|Win32
+		{98EE755C-A881-41FA-B9FE-20D8D9B6641C}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F070F99-8C2F-4962-A968-6BF0A0D9B27C}
+	EndGlobalSection
+EndGlobal
