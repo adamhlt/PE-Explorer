@@ -21,5 +21,20 @@ Every configuration in x86 (Debug and Realese) are already configured.
 
 **It is not necessary to build it in x64, the x86 build can parse x86 and x64 PE file.**
 
+### Other IDE using CMAKE :
+
+This **CMakeLists.txt** should compile the project.
+
+```cmake
+cmake_minimum_required(VERSION 3.0)
+project(explorer)
+
+set(CMAKE_CXX_STANDARD 17)
+
+add_executable(explorer PE_Explorer.cpp)
+```
+
+Tested on CLion with MSVC compiler, you can get Visual Studio Build Tools [**here**](https://visualstudio.microsoft.com/fr/downloads/?q=build+tools).
+
 ### Démonstration
 ![Démontration de l'injecteur de DLL.](https://github.com/adamhlt/PE-Explorer/blob/main/Ressource/demo.gif)
