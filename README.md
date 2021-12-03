@@ -10,6 +10,18 @@ This is a PE file parser, it retrieve every informations from the differents hea
 
 This tool is made in C++ and compiled in x86, it can parse x86 and x64 PE file.
 
+## :books: Features :
+
+The parser retrieve several informations :
+
+- Every fields in DOS header. 
+- Every fields in NT header.
+- Every fields in File header.
+- Every fields in Optional header (x86 / x64).
+- Every sections' informations in the Section header.
+- Every DLL imported with imported functions.
+- Every exported functions (if the DataDirectory exists).
+
 ## 🚀 Getting Started :
 
 ### Visual Studio :
@@ -36,5 +48,21 @@ add_executable(explorer PE_Explorer.cpp)
 
 Tested on CLion with MSVC compiler, you can get Visual Studio Build Tools [**here**](https://visualstudio.microsoft.com/fr/downloads/?q=build+tools).
 
-### Démonstration
-![Démontration de l'injecteur de DLL.](https://github.com/adamhlt/PE-Explorer/blob/main/Ressource/demo.gif)
+### ## :test_tube: Usage
+### How to use the program :
+
+Use it in the command line :
+
+```
+explorer.exe <pe_file>
+```
+
+### Demonstration :
+
+Analyse of test.exe (x86) :
+
+![demo2](https://github.com/adamhlt/PE-Explorer/blob/main/Ressource/demo2.gif)
+
+Analyze of user32.dll (x64) :
+
+![demo1](https://github.com/adamhlt/PE-Explorer/blob/main/Ressource/demo1.gif)
