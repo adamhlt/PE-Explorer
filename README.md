@@ -57,6 +57,8 @@ Use it in the command line :
 explorer.exe <pe_file>
 ```
 
+**You can test the parser with test files in the "Release" section.**
+
 ### Demonstration :
 
 Analyse of test.exe (x86) :
