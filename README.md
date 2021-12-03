@@ -48,7 +48,7 @@ add_executable(explorer PE_Explorer.cpp)
 
 Tested on CLion with MSVC compiler, you can get Visual Studio Build Tools [**here**](https://visualstudio.microsoft.com/fr/downloads/?q=build+tools).
 
-### ## :test_tube: Usage
+## :test_tube: Usage :
 ### How to use the program :
 
 Use it in the command line :
