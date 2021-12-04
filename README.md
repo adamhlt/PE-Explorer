@@ -61,10 +61,10 @@ explorer.exe <pe_file>
 
 ### Demonstration :
 
-Analyse of test.exe (x86) :
+**Analyse of test.exe (x86) :**
 
 ![demo2](https://github.com/adamhlt/PE-Explorer/blob/main/Ressource/demo2.gif)
 
-Analyze of user32.dll (x64) :
+**Analyze of user32.dll (x64) :**
 
 ![demo1](https://github.com/adamhlt/PE-Explorer/blob/main/Ressource/demo1.gif)
