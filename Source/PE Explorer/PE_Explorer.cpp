@@ -262,6 +262,12 @@ void GetImports32(PIMAGE_IMPORT_DESCRIPTOR pImageImportDescriptor, const DWORD d
 
         while (pOriginalFirstThrunk->u1.AddressOfData != 0)
         {
+            if (pOriginalFirstThrunk->u1.AddressOfData >= IMAGE_ORDINAL_FLAG32)
+            {
+                ++pOriginalFirstThrunk;
+                continue;
+            }
+
             const auto pImageImportByName = (PIMAGE_IMPORT_BY_NAME)pOriginalFirstThrunk->u1.AddressOfData;
             if (pImageImportByName == nullptr)
              continue;
@@ -306,6 +312,12 @@ void GetImports64(PIMAGE_IMPORT_DESCRIPTOR pImageImportDescriptor, const DWORD d
 
         while (pOriginalFirstThrunk->u1.AddressOfData != 0)
         {
+            if (pOriginalFirstThrunk->u1.AddressOfData >= IMAGE_ORDINAL_FLAG64)
+            {
+                ++pOriginalFirstThrunk;
+                continue;
+            }
+
             const auto pImageImportByName = (PIMAGE_IMPORT_BY_NAME)pOriginalFirstThrunk->u1.AddressOfData;
             if (pImageImportByName == nullptr)
                 continue;
