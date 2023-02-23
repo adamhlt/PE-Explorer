@@ -31,7 +31,8 @@ The parser retrieve several informations :
 
 Every configuration in x86 (Debug and Realese) are already configured.
 
-**It is not necessary to build it in x64, the x86 build can parse x86 and x64 PE file.**
+> **Note** <br>
+> It is not necessary to build it in x64, the x86 build can parse x86 and x64 PE file.
 
 ### Other IDE using CMAKE :
 
@@ -56,8 +57,8 @@ Use it in the command line :
 ```
 explorer.exe <pe_file>
 ```
-
-**You can test the parser with test files in the "Release" section.**
+> **Note** <br>
+> You can test the parser with test files in the "Release" section.
 
 ### Demonstration :
 
