@@ -1,8 +1,20 @@
-![Banner](https://user-images.githubusercontent.com/48086737/170073956-f6100e8b-a6ac-4207-a2d5-da79f69ad05b.png)
-
-# PE Explorer 
-
-[![C++](https://img.shields.io/badge/language-C%2B%2B-%23f34b7d.svg?style=for-the-badge&logo=appveyor)](https://en.wikipedia.org/wiki/C%2B%2B) [![Windows](https://img.shields.io/badge/platform-Windows-0078d7.svg?style=for-the-badge&logo=appveyor)](https://en.wikipedia.org/wiki/Microsoft_Windows) [![x86](https://img.shields.io/badge/arch-x86-red.svg?style=for-the-badge&logo=appveyor)](https://en.wikipedia.org/wiki/X86)
+```
+                          ____  ______   ______           __                    
+                         / __ \/ ____/  / ____/  ______  / /___  ________  _____
+                        / /_/ / __/    / __/ | |/_/ __ \/ / __ \/ ___/ _ \/ ___/
+                       / ____/ /___   / /____>  </ /_/ / / /_/ / /  /  __/ /
+                      /_/   /_____/  /_____/_/|_/ .___/_/\____/_/   \___/_/
+                                               /_/                         
+                                                                          
+                                                                         
+                                  PE Explorer in C++ (x86 / x64)
+                          PE file parser, retrieve exports and imports
+```
+<p align="center">
+    <img src="https://img.shields.io/badge/language-C%2B%2B-%23f34b7d.svg?style=for-the-badge&logo=appveyor" alt="C++">
+    <img src="https://img.shields.io/badge/platform-Windows-0078d7.svg?style=for-the-badge&logo=appveyor" alt="Windows">
+    <img src="https://img.shields.io/badge/arch-x86-red.svg?style=for-the-badge&logo=appveyor" alt="x86">
+</p>
 
 ## 📖 Project Overview :
 
