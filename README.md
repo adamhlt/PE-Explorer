@@ -20,7 +20,7 @@
 
 This is a PE file parser, it retrieve every informations from the differents headers...
 
-This tool is made in C++ and compiled in x86, it can parse x86 and x64 PE file.
+This tool is made in C++, it can parse x86 and x64 PE file.
 
 ## :books: Features :
 
@@ -39,9 +39,9 @@ The parser retrieve several informations :
 ### Visual Studio :
 
 1. Open the solution file (.sln).
-2. Build the project in Realese (x86)
+2. Build the project in Realese (x86 or x64)
 
-Every configuration in x86 (Debug and Realese) are already configured.
+Every configuration in x86 / x64 (Debug and Realese) are already configured.
 
 > **Note** <br>
 > It is not necessary to build it in x64, the x86 build can parse x86 and x64 PE file.
