@@ -367,7 +367,7 @@ void GetExports(const PIMAGE_EXPORT_DIRECTORY pImageExportDirectory, const DWORD
     printf("\n[+] EXPORTED FUNCTIONS\n\n");
 
     const DWORD_PTR dNumberOfNames = pImageExportDirectory->NumberOfNames;
-    const auto pArrayOfFunctionsNames = (DWORD_PTR*)(dRawOffset + (pImageExportDirectory->AddressOfNames - pImageExportSection->VirtualAddress));
+    const auto pArrayOfFunctionsNames = (DWORD*)(dRawOffset + (pImageExportDirectory->AddressOfNames - pImageExportSection->VirtualAddress));
     for (int i = 0; i < (int) dNumberOfNames; ++i)
         printf("\t%s\n", (char*)dRawOffset + (pArrayOfFunctionsNames[i] - pImageExportSection->VirtualAddress)); 
 }
