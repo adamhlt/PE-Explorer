@@ -48,21 +48,6 @@ explorer.exe <pe_file>
 
 The program returns `0` on success and `1` if the file cannot be read or is not a valid PE file.
 
-## Project structure
-
-| File | Role |
-|---|---|
-| `main.cpp` | Arguments and orchestration |
-| `FileLoader` | Read the file in memory |
-| `PeImage` | Bounds-checked access to the file and RVA to file offset conversion |
-| `PeParser` | Headers, sections and DataDirectories (`Pe32` / `Pe64` templates in `PeTraits.h`) |
-| `ImportParser`, `ExportParser` | Import and export tables |
-| `PeInfo.h` | Structures filled by the parsers |
-| `PePrinter` | Display of the result |
-| `PeNames` | Descriptions of the flags, subsystems and DataDirectories |
-
-All the sources are in `Source/PE Explorer/src/`.
-
 ## Build
 
 1. Open `Source/PE Explorer.sln` in Visual Studio (C++17).
