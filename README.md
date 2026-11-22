@@ -1,83 +1,76 @@
-```
-                          ____  ______   ______           __                    
-                         / __ \/ ____/  / ____/  ______  / /___  ________  _____
-                        / /_/ / __/    / __/ | |/_/ __ \/ / __ \/ ___/ _ \/ ___/
-                       / ____/ /___   / /____>  </ /_/ / / /_/ / /  /  __/ /
-                      /_/   /_____/  /_____/_/|_/ .___/_/\____/_/   \___/_/
-                                               /_/                         
-                                                                          
-                                                                         
-                                  PE Explorer in C++ (x86 / x64)
-                          PE file parser, retrieve exports and imports
-```
-<p align="center">
-    <img src="https://img.shields.io/badge/language-C%2B%2B-%23f34b7d.svg?style=for-the-badge&logo=appveyor" alt="C++">
-    <img src="https://img.shields.io/badge/platform-Windows-0078d7.svg?style=for-the-badge&logo=appveyor" alt="Windows">
-    <img src="https://img.shields.io/badge/arch-x86-red.svg?style=for-the-badge&logo=appveyor" alt="x86">
-</p>
+<div align="center">
 
-## 📖 Project Overview :
+# PE Explorer
 
-This is a PE file parser, it retrieve every informations from the differents headers...
+**PE file parser in C++ (x86 / x64), retrieve headers, sections, imports and exports**
 
-This tool is made in C++, it can parse x86 and x64 PE file.
+![Language](https://img.shields.io/badge/C%2B%2B-16171C?logo=cplusplus)
+![Platform](https://img.shields.io/badge/Windows-16171C)
+![Arch](https://img.shields.io/badge/x86%20%7C%20x64-16171C)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-16171C)](LICENSE)
 
-## :books: Features :
+</div>
 
-The parser retrieve several informations :
+---
 
-- Every fields in DOS header. 
-- Every fields in NT header.
-- Every fields in File header.
-- Every fields in Optional header (x86 / x64).
-- Every sections' informations in the Section header.
-- Every DLL imported with imported functions.
-- Every exported functions (if the DataDirectory exists).
+PE Explorer is a command line tool that parses a PE file (EXE, DLL or driver) and displays everything it contains.
 
-## 🚀 Getting Started :
+It reads the file without loading it, and every access is checked against the file size, so a malformed PE file produces an error message instead of a crash. The same code base handles x86 and x64 files.
 
-### Visual Studio :
+### TEST FILE (EXE - x86)
+https://user-images.githubusercontent.com/48086737/170116809-e80fdc5f-a75b-45df-8961-81e4efd8f165.mp4
 
-1. Open the solution file (.sln).
-2. Build the project in Realese (x86 or x64)
+### TEST FILE (DLL - x64)
+https://user-images.githubusercontent.com/48086737/170116974-9bf830f2-814b-435d-a974-820bc0ecfe9d.mp4
 
-Every configuration in x86 / x64 (Debug and Realese) are already configured.
+## Features
 
-> **Note** <br>
-> It is not necessary to build it in x64, the x86 build can parse x86 and x64 PE file.
+**Headers**
+- Every field of the DOS header, NT header and File header
+- Every field of the Optional header (x86 / x64)
+- DataDirectory entries (address and size)
 
-### Other IDE using CMAKE :
+**Sections**
+- Every field of the Section headers, with the protection (`EXECUTE | READ | WRITE`)
 
-This **CMakeLists.txt** should compile the project.
+**Imports and exports**
+- Every imported DLL with its functions (by name or by ordinal)
+- Every exported function with its ordinal and address, including forwarded exports
 
-```cmake
-cmake_minimum_required(VERSION 3.0)
-project(explorer)
-
-set(CMAKE_CXX_STANDARD 17)
-
-add_executable(explorer PE_Explorer.cpp)
-```
-
-Tested on CLion with MSVC compiler, you can get Visual Studio Build Tools [**here**](https://visualstudio.microsoft.com/fr/downloads/?q=build+tools).
-
-## :test_tube: Usage :
-### How to use the program :
-
-Use it in the command line :
+## Usage
 
 ```
 explorer.exe <pe_file>
 ```
-> **Note** <br>
-> You can test the parser with test files in the "Release" section.
 
-### Demonstration :
+> **Note**
+> You can test the parser with the test files in the "Release" section.
 
-### TEST FILE (EXE - x86)
+The program returns `0` on success and `1` if the file cannot be read or is not a valid PE file.
 
-https://user-images.githubusercontent.com/48086737/170116809-e80fdc5f-a75b-45df-8961-81e4efd8f165.mp4
+## Project structure
 
-### TEST FILE (DLL - x64)
+| File | Role |
+|---|---|
+| `main.cpp` | Arguments and orchestration |
+| `FileLoader` | Read the file in memory |
+| `PeImage` | Bounds-checked access to the file and RVA to file offset conversion |
+| `PeParser` | Headers, sections and DataDirectories (`Pe32` / `Pe64` templates in `PeTraits.h`) |
+| `ImportParser`, `ExportParser` | Import and export tables |
+| `PeInfo.h` | Structures filled by the parsers |
+| `PePrinter` | Display of the result |
+| `PeNames` | Descriptions of the flags, subsystems and DataDirectories |
 
-https://user-images.githubusercontent.com/48086737/170116974-9bf830f2-814b-435d-a974-820bc0ecfe9d.mp4
+All the sources are in `Source/PE Explorer/src/`.
+
+## Build
+
+1. Open `Source/PE Explorer.sln` in Visual Studio (C++17).
+2. Build in Release (x86 or x64).
+
+- **Output:** every configuration is already set up, the executable is named `explorer.exe`
+- **Architecture:** the x86 build can parse x86 and x64 PE files, and so can the x64 build
+
+## License
+
+This project is licensed under the [GNU GPLv3](LICENSE).

@@ -1,22 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Fichiers sources">
+    <Filter Include="Source Files">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Fichiers d%27en-tête">
+    <Filter Include="Header Files">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Fichiers de ressources">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Fichiers sources</Filter>
-    </ClCompile>
+    <ClCompile Include="src\ExportParser.cpp"><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="src\FileLoader.cpp"><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="src\ImportParser.cpp"><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="src\main.cpp"><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="src\PeImage.cpp"><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="src\PeNames.cpp"><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="src\PeParser.cpp"><Filter>Source Files</Filter></ClCompile>
+    <ClCompile Include="src\PePrinter.cpp"><Filter>Source Files</Filter></ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Common.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="src\ExportParser.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="src\FileLoader.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="src\ImportParser.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="src\PeImage.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="src\PeInfo.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="src\PeNames.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="src\PeParser.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="src\PePrinter.h"><Filter>Header Files</Filter></ClInclude>
+    <ClInclude Include="src\PeTraits.h"><Filter>Header Files</Filter></ClInclude>
   </ItemGroup>
 </Project>
