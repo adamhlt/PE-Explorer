@@ -50,7 +50,7 @@ The program returns `0` on success and `1` if the file cannot be read or is not 
 
 ## Build
 
-1. Open `Source/PE Explorer.sln` in Visual Studio (C++17).
+1. Open `PE Explorer.sln` in Visual Studio (C++17).
 2. Build in Release (x86 or x64).
 
 - **Output:** every configuration is already set up, the executable is named `explorer.exe`
