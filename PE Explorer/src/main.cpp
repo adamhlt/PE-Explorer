@@ -11,7 +11,7 @@ int main(const int argc, char* argv[])
 {
     if (argc != 2)
     {
-        printf("[HELP] explorer.exe <file>\n");
+        printf("[HELP] PEExplorer.exe <file>\n");
         return 1;
     }
 

@@ -40,7 +40,7 @@ https://user-images.githubusercontent.com/48086737/170116974-9bf830f2-814b-435d-
 ## Usage
 
 ```
-explorer.exe <pe_file>
+PEExplorer.exe <pe_file>
 ```
 
 > **Note**
@@ -53,7 +53,7 @@ The program returns `0` on success and `1` if the file cannot be read or is not 
 1. Open `PE Explorer.sln` in Visual Studio (C++17).
 2. Build in Release (x86 or x64).
 
-- **Output:** every configuration is already set up, the executable is named `explorer.exe`
+- **Output:** every configuration is already set up, the executable is named `PEExplorer.exe`
 - **Architecture:** the x86 build can parse x86 and x64 PE files, and so can the x64 build
 
 ## License
